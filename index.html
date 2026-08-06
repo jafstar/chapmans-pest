@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapmans Pest Control — Locally Owned, Daniels WV</title>
+<meta name="description" content="Chapmans Pest Control — 17 years protecting homes in Daniels, WV and the surrounding area. Ants, spiders, mice, bees, roaches &amp; bedbugs. Locally owned and operated.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.185.1/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.185.1/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <!-- Real 3-column grid, not flex+space-between - the earlier flex
+       version needed a margin-left hack to keep nav-desktop from
+       rendering under the logo, and that same "single visible child"
+       shape is what silently collapsed the hamburger to the wrong edge
+       on mobile. A grid column reserves the logo's space honestly
+       whether or not anything is in it yet, so nav-desktop stays
+       genuinely centered and the hamburger stays pinned right,
+       regardless of scroll state. Logo itself doesn't exist pre-scroll
+       at all (not just hidden) - it fades in only once .scrolled, with
+       the same blurred glow backing as the hero's 3D logo. -->
+  <div class="wrap header-bar">
+    <a href="#top" class="brand-nav-logo" aria-label="Chapmans Pest Control">
+      <div class="brand-nav-logo-backing"></div>
+      <img src="assets/img/logo-transparent.png" alt="Chapmans Pest Control shield crest">
+    </a>
+
+    <nav class="nav-desktop">
+      <a href="#services">Services</a>
+      <a href="#defender">The Ad</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+13047318274" class="phone-pill">
+        <span class="phone-dot"></span>(304) 731-8274
+      </a>
+      <a href="#contact" class="btn btn-gradient">Free Quote</a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="nav-mobile" id="navMobile">
+    <a href="#services">Services</a>
+    <a href="#defender">The Ad</a>
+    <a href="#why-us">Why Us</a>
+    <a href="#contact">Contact</a>
+    <a href="tel:+13047318274" class="btn btn-gradient" style="text-align:center;margin-top:8px;">Call (304) 731-8274</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero hero-crest">
+    <!-- Real video, not line art - a basement corner with roaches/ants
+         actually emerging from a crack. Dimmed + vignetted underneath so
+         the crest and text stay legible on top (same "atmosphere, not
+         competing content" lesson from the earlier 3D-character build). -->
+    <video class="hero-crest-video" autoplay muted loop playsinline poster="assets/video/basement-frame.png">
+      <source src="assets/video/basement-bugs-insectfade.mp4" type="video/mp4">
+    </video>
+    <div class="hero-crest-scrim"></div>
+    <div class="hero-crest-glow"></div>
+    <div class="wrap hero-crest-content">
+      <div id="heroLogo3d" class="hero-logo-3d">
+        <div class="hero-logo-backing"></div>
+        <img src="assets/img/logo-transparent.png" alt="Chapmans Pest Control shield crest" class="hero-logo-fallback">
+        <div class="hero-logo-gloss"></div>
+      </div>
+      <div class="eyebrow">Locally Owned &amp; Operated · 17 Years Experience</div>
+      <h1>Whatever's in your walls,<br><span class="grad">we're coming for it.</span></h1>
+      <p class="hero-sub">Ants, spiders, mice, bees, roaches, bedbugs — Chapmans has been clearing them out of homes around Daniels, WV for 17 years. Same crew, same neighborhood, no franchise call center.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-gradient btn-lg">Get a Free Quote</a>
+        <a href="tel:+13047318274" class="btn btn-ghost btn-lg">Call (304) 731-8274</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pests" id="services">
+    <div class="wrap">
+      <div class="eyebrow">What We Handle</div>
+      <h2>Five most-called problems. One crew that fixes all of them.</h2>
+      <div class="pest-grid">
+
+        <div class="pest-card">
+          <div class="pest-media"><img src="assets/pests/ants.png" alt="Ants"></div>
+          <div class="pest-label">Ants</div>
+        </div>
+
+        <div class="pest-card">
+          <div class="pest-media"><img src="assets/pests/spider.png" alt="Spiders"></div>
+          <div class="pest-label">Spiders</div>
+        </div>
+
+        <div class="pest-card">
+          <div class="pest-media"><img src="assets/pests/mouse.png" alt="Mice and rodents"></div>
+          <div class="pest-label">Mice &amp; Rodents</div>
+        </div>
+
+        <div class="pest-card">
+          <div class="pest-media"><img src="assets/pests/bees.png" alt="Bees and wasps"></div>
+          <div class="pest-label">Bees &amp; Wasps</div>
+        </div>
+
+        <div class="pest-card">
+          <div class="pest-media"><img src="assets/pests/roach.png" alt="Roaches and bedbugs"></div>
+          <div class="pest-label">Roaches &amp; Bedbugs</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="defender" id="defender">
+    <div class="wrap defender-grid">
+      <div class="defender-copy">
+        <div class="eyebrow">Yes, This Is Real</div>
+        <h2>The ad that's actually running on our Facebook page.</h2>
+        <p>We could've bought stock footage of a guy in a polo shirt. Instead we made this. It's a little ridiculous. It's also the most-talked-about thing we've ever posted — so we're leaving it right here on the homepage too.</p>
+        <a href="assets/video/chapmans-ad.mp4" class="btn btn-ghost" target="_blank" rel="noopener">Watch full ad ↗</a>
+      </div>
+      <div class="defender-media">
+        <video controls playsinline poster="assets/img/hero-triumphant.png" style="width:100%;display:block;border-radius:10px;">
+          <source src="assets/video/chapmans-ad.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="why-us">
+    <div class="wrap">
+      <div class="eyebrow">Why Chapmans</div>
+      <h2>Small crew. Big shield. No franchise upsells.</h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-num">17</div>
+          <div class="why-title">Years in Daniels, WV</div>
+          <div class="why-body">Same local crew the whole time — not a rotating franchise territory.</div>
+        </div>
+        <div class="why-card">
+          <div class="why-num">100%</div>
+          <div class="why-title">Locally Owned &amp; Operated</div>
+          <div class="why-body">You're calling the people who actually show up, not a national dispatch line.</div>
+        </div>
+        <div class="why-card">
+          <div class="why-num">5</div>
+          <div class="why-title">Pest Types, One Visit</div>
+          <div class="why-body">Ants to bedbugs — no bouncing you to a "specialist" for each one.</div>
+        </div>
+        <div class="why-card">
+          <div class="why-num">1</div>
+          <div class="why-title">Straight Answer</div>
+          <div class="why-body">We tell you what it'll cost before we start, not after.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-info">
+        <div class="eyebrow">Get In Touch</div>
+        <h2>Tell us what you're seeing.</h2>
+        <p class="hero-sub" style="margin-bottom:28px;">Send a few details and we'll get back to you — usually same day.</p>
+
+        <div class="contact-line"><span class="contact-label">Phone</span><a href="tel:+13047318274">(304) 731-8274</a></div>
+        <div class="contact-line"><span class="contact-label">Email</span><a href="mailto:Chapmanspestcontrol2026@gmail.com">Chapmanspestcontrol2026@gmail.com</a></div>
+        <div class="contact-line"><span class="contact-label">Address</span><span>118 Shady Acres Ln., Daniels, WV</span></div>
+        <div class="contact-line"><span class="contact-label">Service Area</span><span>Daniels, WV &amp; surrounding area</span></div>
+        <div class="contact-line"><span class="contact-label">Hours</span><span>[ HOURS — add real hours ]</span></div>
+
+        <div class="todo-flag">🔧 Hours not yet provided — add real hours when you have them.</div>
+      </div>
+
+      <form class="contact-form" action="mailto:Chapmanspestcontrol2026@gmail.com" method="post" enctype="text/plain">
+        <label>Name<input type="text" name="name" required></label>
+        <label>Phone<input type="tel" name="phone" required></label>
+        <label>What's the problem?
+          <select name="pest">
+            <option>Ants</option>
+            <option>Spiders</option>
+            <option>Mice / Rodents</option>
+            <option>Bees / Wasps</option>
+            <option>Roaches / Bedbugs</option>
+            <option>Not sure</option>
+          </select>
+        </label>
+        <label>Details<textarea name="details" rows="3"></textarea></label>
+        <button type="submit" class="btn btn-gradient btn-lg" style="width:100%;">Send It</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-bar">
+    <div class="brand-word small">CHAPMANS <span class="brand-sub">PEST CONTROL</span></div>
+    <div class="footer-meta">© <span id="year"></span> Chapmans Pest Control · Daniels, WV · chapmanspestcontrol.com</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script type="module" src="hero3d.js"></script>
+</body>
+</html>
