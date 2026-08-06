@@ -187,7 +187,12 @@
         <div class="contact-line"><span class="contact-label">Hours</span><span>8:00 AM – 6:00 PM</span></div>
       </div>
 
-      <form class="contact-form" action="mailto:Chapmanspestcontrol2026@gmail.com" method="post" enctype="text/plain">
+      <!-- Real bug fixed here: mailto: forms only open the visitor's own
+           local mail client (if they have one configured) and don't
+           actually submit anything - most mobile/webmail users just hit
+           a silent dead end. Now posts to ezforms.dev's relay, which
+           emails the submission via a real transactional API. -->
+      <form class="contact-form" action="https://ezforms.dev/api/f/chapmans-contact" method="post">
         <label>Name<input type="text" name="name" required></label>
         <label>Phone<input type="tel" name="phone" required></label>
         <label>What's the problem?
@@ -201,6 +206,9 @@
           </select>
         </label>
         <label>Details<textarea name="details" rows="3"></textarea></label>
+        <!-- Honeypot - real visitors never see or fill this in; ezforms.dev
+             silently discards submissions where it's non-empty. -->
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true">
         <button type="submit" class="btn btn-gradient btn-lg" style="width:100%;">Send It</button>
       </form>
     </div>
